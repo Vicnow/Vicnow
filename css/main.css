@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Subrayada|Pacifico&display=swap");
 html,
 body {
   margin: 0;
@@ -27,12 +28,39 @@ body {
   text-shadow: 0 0 3vw #F40A35;
 }
 
-.flux {
-  font-family: "Limelight", cursive;
-  color: #426DFB;
-  font-size: 4vw;
-  line-height: 6vw;
-  text-shadow: 0 0 3vw #2356FF;
+.links {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 5vw;
+  font-size: 4vh;
+  line-height: 4vh;
+  margin: 50px;
+}
+
+.link__CursoFrontend a {
+  font-family: "Montserrat Subrayada", sans-serif;
+  color: #6d6d6d;
+  transition-delay: 200ms;
+  transition-duration: 0.8s;
+  text-decoration: none;
+}
+
+.link__CursoFrontend a:hover {
+  text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 0.4vw #8BFDFE, 0.5vw 0.5vw 0.1vw #147280;
+  color: #28D7FE;
+}
+
+.link__Bebecita a {
+  font-family: "Pacifico", cursive;
+  color: #6d6d6d;
+  transition-delay: 200ms;
+  transition-duration: 0.8s;
+  text-decoration: none;
+}
+
+.link__Bebecita a:hover {
+  text-shadow: 0 0 1vw #c70f5b, 0 0 3vw #c70f5b, 0 0 10vw #c70f5b, 0 0 10vw #c70f5b, 0 0 0.4vw #ff13b0, 0.5vw 0.5vw 0.1vw #962190;
+  color: #ff13b0;
 }
 
 .neon {
@@ -51,30 +79,13 @@ body {
     color: #806914;
   }
 }
-.flux {
-  animation: flux 4s linear infinite;
-  -moz-animation: flux 4s linear infinite;
-  -webkit-animation: flux 4s linear infinite;
-  -o-animation: flux 4s linear infinite;
-}
-
-@keyframes flux {
-  0%, 100% {
-    text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 0.4vw #8BFDFE, 0.5vw 0.5vw 0.1vw #147280;
-    color: #28D7FE;
-  }
-  50% {
-    text-shadow: 0 0 0.5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 0.2vw #082180, 0.5vw 0.5vw 0.1vw #0A3940;
-    color: #146C80;
-  }
-}
 @media only screen and (max-width: 600px) {
   .neon {
     font-size: 15vw;
     line-height: 18vw;
   }
 
-  .flux {
+  .link__CursoFrontend {
     font-size: 8vw;
     line-height: 8vw;
   }
