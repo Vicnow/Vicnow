@@ -1,3 +1,82 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #243B55, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #243B55, #000000); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
+.container {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
 
-/*# sourceMappingURL=main.css.map */
+.neon {
+    font-family: 'Limelight', cursive;
+    color: #FB4264;
+    font-size: 9vw;
+    line-height: 9vw;
+    text-shadow: 0 0 3vw #F40A35;
+}
+
+.flux {
+    font-family: 'Limelight', cursive;
+    color: #426DFB;
+    font-size: 4vw;
+    line-height: 6vw;
+    text-shadow: 0 0 3vw #2356FF;
+}
+
+.neon {
+    animation: neon 4s ease infinite;
+    -moz-animation: neon 4s ease infinite;
+    -webkit-animation: neon 4s ease infinite;
+}
+
+@keyframes neon {
+    0%,
+    100% {
+        text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+        color: #FED128;
+    }
+    50% {
+        text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+        color: #806914;
+    }
+}
+
+.flux {
+    animation: flux 4s linear infinite;
+    -moz-animation: flux 4s linear infinite;
+    -webkit-animation: flux 4s linear infinite;
+    -o-animation: flux 4s linear infinite;
+}
+
+@keyframes flux {
+    0%,
+    100% {
+        text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+        color: #28D7FE;
+    }
+    50% {
+        text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+        color: #146C80;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .neon {
+        font-size: 15vw;
+        line-height: 18vw;
+    }
+    
+    .flux {
+        font-size: 8vw;
+        line-height: 8vw;
+    }
+  }
