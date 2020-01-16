@@ -23,26 +23,32 @@ body {
 .neon {
   font-family: "Limelight", cursive;
   color: #FB4264;
-  font-size: 9vw;
-  line-height: 9vw;
+  font-size: 11vw;
+  line-height: 11vw;
   text-shadow: 0 0 3vw #F40A35;
 }
 
 .links {
   display: flex;
-  justify-content: space-around;
-  padding: 0 5vw;
-  font-size: 4vh;
-  line-height: 4vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  margin: 20px;
   margin: 50px;
 }
 
+.link__CursoFrontend {
+  width: 100%;
+  margin: 12px 0;
+}
 .link__CursoFrontend a {
   font-family: "Montserrat Subrayada", sans-serif;
   color: #6d6d6d;
   transition-delay: 200ms;
   transition-duration: 0.8s;
   text-decoration: none;
+  font-size: 4vh;
 }
 
 .link__CursoFrontend a:hover {
@@ -50,12 +56,17 @@ body {
   color: #28D7FE;
 }
 
+.link__Bebecita {
+  width: 100%;
+  margin: 12px 0;
+}
 .link__Bebecita a {
   font-family: "Pacifico", cursive;
   color: #6d6d6d;
   transition-delay: 200ms;
   transition-duration: 0.8s;
   text-decoration: none;
+  font-size: 4vh;
 }
 
 .link__Bebecita a:hover {
@@ -85,9 +96,43 @@ body {
     line-height: 18vw;
   }
 
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
   .link__CursoFrontend {
-    font-size: 8vw;
-    line-height: 8vw;
+    margin: 25px 0;
+  }
+
+  .link__Bebecita {
+    margin: 25px 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .neon {
+    font-size: 15vw;
+    line-height: 18vw;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .link__CursoFrontend {
+    font-size: 25px;
+    margin: 15px 0;
+  }
+
+  .link__Bebecita {
+    font-size: 25px;
+    margin: 15px 0;
   }
 }
 
