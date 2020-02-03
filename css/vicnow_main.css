@@ -10,7 +10,11 @@ body{
 }
 /* nav */
 .navbar{
+<<<<<<< HEAD
   /* position: absolute !important; */
+=======
+  position: absolute !important;
+>>>>>>> f4db528d05e185b08fd131a2f16fb8c0dfad6b4f
 }
 .navbar__bg{
   background-color: transparent;
@@ -36,6 +40,12 @@ body{
   justify-content: center;
   flex-wrap: wrap;
   color: white;
+<<<<<<< HEAD
+=======
+  background-image: url("https://i.pinimg.com/originals/de/81/2f/de812f9800010020e78fcad2b7a3f51f.jpg");
+  background-position: center;
+  background-size: cover;
+>>>>>>> f4db528d05e185b08fd131a2f16fb8c0dfad6b4f
 }
 .principal__container{
   background-color: smokewhite;
