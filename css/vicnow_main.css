@@ -6,9 +6,13 @@ body{
   background-color: red;
 }
 /* nav */
+.navbar{
+  position: absolute !important;
+}
 .navbar__bg{
-  background: rgb(9,32,63);
-  background: linear-gradient(90deg, rgba(9,32,63,1) 0%, rgba(83,120,149,1) 100%);
+  background-color: transparent;
+  /* background: rgb(9,32,63);
+  background: linear-gradient(90deg, rgba(9,32,63,1) 0%, rgba(83,120,149,1) 100%); */
 }
 
 .navbar__title{
@@ -23,10 +27,15 @@ body{
 /* Principal */
 .principal{
   width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  color: white;
+  background-image: url("https://i.pinimg.com/originals/de/81/2f/de812f9800010020e78fcad2b7a3f51f.jpg");
+  background-position: center;
+  background-size: cover;
 }
 .principal__container{
   background-color: smokewhite;
@@ -47,7 +56,7 @@ body{
 .principal__container-presentacion{
   width: 100%;
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
 }
 .mi_nombre{
   font-weight: 600;
