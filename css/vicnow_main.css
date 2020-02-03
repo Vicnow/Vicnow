@@ -3,12 +3,19 @@
 @import url('https://fonts.googleapis.com/css?family=Limelight&display=swap');
 /* body */
 body{
-  background-color: red;
+  background-image: url("https://i.pinimg.com/originals/de/81/2f/de812f9800010020e78fcad2b7a3f51f.jpg");
+  background-position: top;
+  background-size: inherit;
+  background-clip: border-box;
 }
 /* nav */
+.navbar{
+  /* position: absolute !important; */
+}
 .navbar__bg{
-  background: rgb(9,32,63);
-  background: linear-gradient(90deg, rgba(9,32,63,1) 0%, rgba(83,120,149,1) 100%);
+  background-color: transparent;
+  /* background: rgb(9,32,63);
+  background: linear-gradient(90deg, rgba(9,32,63,1) 0%, rgba(83,120,149,1) 100%); */
 }
 
 .navbar__title{
@@ -23,10 +30,12 @@ body{
 /* Principal */
 .principal{
   width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  color: white;
 }
 .principal__container{
   background-color: smokewhite;
@@ -43,17 +52,21 @@ body{
   background-position: center;
   background-size: contain;
   margin: 30px;
+  -webkit-box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.9);
+  -moz-box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.9);
+  box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.9);
 }
 .principal__container-presentacion{
   width: 100%;
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
 }
 .mi_nombre{
   font-weight: 600;
 }
 /* skills */
 .skills{
+  background-color: white;
   padding: 30px 0;
   display: flex;
 }
@@ -103,7 +116,7 @@ body{
   width: 64px;
 }
 .skill__card{
-  height: inherit;
+  height: auto;
 }
 .skill__card h4{
   /* font-weight: bold; */
@@ -113,12 +126,13 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: white;
+  padding: 20px 0;
 }
 .social__container-redes{
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  margin: 15px 0 40px;
 }
 .social__container-redes a{
   margin: 0 10px;
