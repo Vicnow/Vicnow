@@ -25,13 +25,10 @@ body {
   animation: rotate-center 1s linear 2 both; }
 
 /* Principal */
-.principal {
-  background-image: url("https://i.pinimg.com/originals/de/81/2f/de812f9800010020e78fcad2b7a3f51f.jpg");
-  background-position: top;
-  background-size: inherit;
-  background-clip: border-box;
+.principal_proyecto {
+  background-color: aliceblue;  
   width: 100%;
-  height: 100vh;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,34 +62,34 @@ body {
 .mi_nombre {
   font-weight: 600; }
 
-/* skills */
-.skills {
+/* proyectos */
+.proyectos {
   background-color: white;
   padding: 30px 0;
   display: flex; }
 
-.skills__container {
+.proyectos__container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap; }
 
-.skills__container-titulo {
+.proyectos__container-titulo {
   font-family: "Montserrat Subrayada", sans-serif;
   width: 100%;
   text-align: center;
   margin-bottom: 30px;
   margin-top: 5px; }
 
-.skills__container-list {
+.proyectos__container-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   background-color: smokewhite; }
 
-.skill {
-  width: 330px;
-  height: 400px;
+.proyecto {
+  width: 600px;
+  height: 250px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -107,19 +104,23 @@ body {
   -moz-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.9);
   box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.9); }
 
-.skill__img {
+  .proyecto__link:hover{
+    text-decoration: none;
+  }
+
+.proyecto__img {
   width: 100%;
   height: 100px;
   padding-top: 15px; }
 
-.skill__img img {
+.proyecto__img img {
   height: 64px;
   width: 64px; }
 
-.skill__card {
+.proyecto__card {
   height: auto; }
 
-.skill__card h4 {
+.proyecto__card h4 {
   /* font-weight: bold; */ }
 
 /* redes sociales */
@@ -190,8 +191,9 @@ body {
     transform: translateY(0) rotate(0deg);
     opacity: 1; } }
 
-    @media only screen and (min-width: 1200px) {
-      .principal{
-        background-size: cover;
+    @media only screen and (max-width: 680px) {
+        .proyecto{
+            width: 100%;
+            height: 100%;
+        }
       }
-    }
